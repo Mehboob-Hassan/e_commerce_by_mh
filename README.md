@@ -58,7 +58,7 @@ A robust and scalable E-Commerce Backend built with **Node.js**, **Express**, an
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/your-username/ecommerce-api.git
+git clone https://github.com/Mehboob-Hassan/e_commerce_by_mh
 cd ecommerce-api
 ```
 
