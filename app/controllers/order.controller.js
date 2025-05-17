@@ -28,7 +28,7 @@ const createOrder = async (req, res, next) => {
         });
 
         const createdOrder = await order.save();
-        res.status(201).json(createdOrder);
+        res.status(201).json({message: "Order Placed Successfully", updatedOrder});
     } catch (err) {
         next(err);
     }
@@ -54,7 +54,7 @@ const updateOrderStatus = async (req, res, next) => {
         }
 
         const updatedOrder = await order.save();
-        res.json(updatedOrder);
+        res.json({message: "Order Updated Successfully", updatedOrder});
     } catch (err) {
         next(err);
     }

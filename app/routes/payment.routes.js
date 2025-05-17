@@ -1,5 +1,5 @@
 import Router from 'express';
-import { createStripeCheckout } from '../controllers/stripe.controller.js';
+import { createStripeCheckout } from '../controllers/payment.controller.js';
 const router = Router();
 
 router.post('/create-checkout-session', createStripeCheckout);
