@@ -5,7 +5,7 @@ const router = Router();
 
 
 router.post('/create', createOrder);
-router.post('/update/:id', isAdmin, updateOrderStatus);
+router.put('/update/:id', isAdmin, updateOrderStatus);
 router.get('/view', isAdmin, getAllOrders);
 router.get('/view/:id',  getOrderById);
 
